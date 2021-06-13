@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.4.0"
+    }
+  },
+  "routes": [
+    { "src": "/tools(?<tools>[^/]*)",  "dest": "/tools.html?$tools" },
+    { "src": "/comments",  "dest": "/comment.html" },
+    { "src": "/log",  "dest": "/log.html" }
+  ]
+}
