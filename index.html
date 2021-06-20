@@ -25,6 +25,12 @@
 	  @import url('https://fonts.googleapis.com/css?family=Bungee');
 	  @import url('https://fonts.googleapis.com/css?family=Squada+One');
 	  @import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+	  server {
+	  	color: yellow;
+	  }
+	  oren {
+	  	color: orange;
+	  }
 </style>
 <body class="hold-transition sidebar-mini" oncontextmenu="return false" onkeydown="return false" onmousedown="return false" bgcolor="#1f1f1f">
 	<noscript>
@@ -76,58 +82,58 @@
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="tools.html?admin" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Admin Finder</a></li>
-						<li><a href="tools.html?cms" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CMS Scanner</a></li>
+						<li><a href="tools.html?admin" target="_blank" id="finder"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Admin Finder</a></li>
+						<li><a href="tools.html?cms" target="_blank" id="cms"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CMS Scanner</a></li>
 						<li><a href="#"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Tools<i class="fa fa-angle-left pull-right"></i></a>
 						<ul class="treeview-menu">
-								<li><a href="tools.html?asik" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Add Admin ASIK</a>
+								<li><a href="tools.html?asik" target="_blank" id="asik"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Add Admin ASIK</a>
 								</li>
-								<li><a href="tools.html?candycbt" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Admin CandyCBT</a>
+								<li><a href="tools.html?candycbt" target="_blank" id="admincandy"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Admin CandyCBT</a>
 								</li>
-								<li><a href="tools.html?kontributor" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Add Kontributor</a>
-								</li>
-								<li>
-									<a href="tools.html?balitbang" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Balitbang 3.5.3</a>
+								<li><a href="tools.html?kontributor" target="_blank" id="kontributor"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Add Kontributor</a>
 								</li>
 								<li>
-									<a href="tools.html?csrf" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Online</a>
+									<a href="tools.html?balitbang" target="_blank" id="balitbang"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Balitbang 3.5.3</a>
+								</li>
+								<li>
+									<a href="tools.html?csrf" target="_blank" id="csrf"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Online</a>
 								</li>
 							</ul>
-						<li><a href="tools.html?email" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Email Bomber</a></li>
-						<li><a href="tools.html?gdork" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Google Dorker</a></li>
-						<li><a href="tools.html?jso" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>JSO Generator</a></li>
-						<li><a href="tools.html?kcfind" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>KCFinder Path Finder</a></li>
+						<li><a href="tools.html?email" target="_blank" id="mailer"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Email Bomber</a></li>
+						<li><a href="tools.html?gdork" target="_blank" id="gdorker"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Google Dorker</a></li>
+						<li><a href="tools.html?jso" target="_blank" id="jso"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>JSO Generator</a></li>
+						<li><a href="tools.html?kcfind" target="_blank" id="kcfind"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>KCFinder Path Finder</a></li>
             <li><a href="#"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Laravel Exploits<i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
-               	<li><a href="tools.html?appkey" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>AppKey RCE</a>
-              	<li><a href="tools.html?phpunit" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>phpunit RCE</a>
+               	<li><a href="tools.html?appkey" target="_blank" id="appkey"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>AppKey RCE</a>
+              	<li><a href="tools.html?phpunit" target="_blank" id="phpunit"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>phpunit RCE</a>
                 </li>
-                <li><a href="tools.html?stdin" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Eval Stdin Scanner</a>
+                <li><a href="tools.html?stdin" target="_blank" id="evalstdin"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Eval Stdin Scanner</a>
                 </li>
-                <li><a href="tools.html?masenv" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Env Scanner</a>
+                <li><a href="tools.html?masenv" target="_blank" id="massenv"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Env Scanner</a>
                 </li>
               </ul>
-						<li><a href="tools.html?mfind" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Admin Finder</a></li>
-						<li><a href="tools.html?mblb" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass SQLI Balitbang</a></li>
-						<li><a href="tools.html?msql" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass SQLi Scanner</a></li>
-						<li><a href="tools.html?telerik" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Telerik Scanner</a></li>
-						<li><a href="tools.html?plal" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Perl.alfa RCE</a></li>
-						<li><a href="tools.html?sby" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Shell Bypasser Anti 403</a></li>
-						<li><a href="tools.html?ssi" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>SSI Command Bypasser</a></li>
-						<li><a href="tools.html?telkey" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Telerik Brute Keys</a></li>
-						<li><a href="tools.html?timthumb" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>TimThumb Exploiter</a></li>
-						<li><a href="tools.html?updir" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Upload Path Finder</a></li>
-						<li><a href="tools.html?webdav" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>WebDav Mass Deface</a></li>
+						<li><a href="tools.html?mfind" target="_blank" id="massfinder"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Admin Finder</a></li>
+						<li><a href="tools.html?mblb" target="_blank" id="massbalitbang"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass SQLI Balitbang</a></li>
+						<li><a href="tools.html?msql" target="_blank" id="masssqli"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass SQLi Scanner</a></li>
+						<li><a href="tools.html?telerik" target="_blank" id="telerik"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Telerik Scanner</a></li>
+						<li><a href="tools.html?plal" target="_blank" id="perlalfa"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Perl.alfa RCE</a></li>
+						<li><a href="tools.html?sby" target="_blank" id="bypasser"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Shell Bypasser Anti 403</a></li>
+						<li><a href="tools.html?ssi" target="_blank" id="ssi"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>SSI Command Bypasser</a></li>
+						<li><a href="tools.html?telkey" target="_blank" id="telerikey"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Telerik Brute Keys</a></li>
+						<li><a href="tools.html?timthumb" target="_blank" id="timthumb"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>TimThumb Exploiter</a></li>
+						<li><a href="tools.html?updir" target="_blank" id="updir"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Upload Path Finder</a></li>
+						<li><a href="tools.html?webdav" target="_blank" id="webdav"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>WebDav Mass Deface</a></li>
 						<li><a href="#"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wordpress Exploits<i class="fa fa-angle-left pull-right"></i></a>
 						<ul class="treeview-menu">
-								<li><a href="tools.html?wpbf" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wordpress Bruteforce</a>
+								<li><a href="tools.html?wpbf" target="_blank" id="wpbf"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wordpress Bruteforce</a>
 								</li>
-								<li><a href="tools.html?wpup" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wp Mass Default u/p</a>
+								<li><a href="tools.html?wpup" target="_blank" id="wpup"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wp Mass Default u/p</a>
 								</li>
-								<li><a href="tools.html?wpcustom" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wp Mass Custom u/p</a>
+								<li><a href="tools.html?wpcustom" target="_blank" id="wpupcustom"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wp Mass Custom u/p</a>
 								</li>
 							</ul>
-						<li><a href="tools.html?xampp" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>XAMPP Local Write Access</a></li>
+						<li><a href="tools.html?xampp" target="_blank" id="xampp"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>XAMPP Local Write Access</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
@@ -136,13 +142,13 @@
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="tools.html?encode" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Encode & Decode</a></li>
-						<li><a href="tools.html?htmle" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>HTML Encrypter</a></li>
-						<li><a href="tools.html?livehtml" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Live HTML</a></li>
-						<li><a href="tools.html?obfuscator" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>PHP Obfuscator</a></li>
-						<li><a href="tools.html?proxy" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Proxy Website</a></li>
-						<li><a href="tools.html?duplicate" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Remove Duplicate Line</a></li>
-						<li><a href="tools.html?obf" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Simple Obfuscator</a></li>
+						<li><a href="tools.html?encode" target="_blank" id="encode"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Encode & Decode</a></li>
+						<li><a href="tools.html?htmle" target="_blank" id="html"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>HTML Encrypter</a></li>
+						<li><a href="tools.html?livehtml" target="_blank" id="livehtml"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Live HTML</a></li>
+						<li><a href="tools.html?obfuscator" target="_blank" id="obfuscator"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>PHP Obfuscator</a></li>
+						<li><a href="tools.html?proxy" target="_blank" id="proxy"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Proxy Website</a></li>
+						<li><a href="tools.html?duplicate" target="_blank" id="duplicate"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Remove Duplicate Line</a></li>
+						<li><a href="tools.html?obf" target="_blank" id="obf"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Simple Obfuscator</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
@@ -151,16 +157,16 @@
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="tools.html?dnsv" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>DNS Lookup</a></li>
-						<li><a href="tools.html?iplookup" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>IP Lookup</a></li>
-						<li><a href="tools.html?server" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Scan Server</a></li>
-						<li><a href="tools.html?portscan" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Port Scanner</a></li>
-						<li><a href="tools.html?ipweb" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Website IP Finder</a></li>
-						<li><a href="tools.html?revip" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Reverse IP</a></li>
-						<li><a href="tools.html?subdomain" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Subdomain Scanner</a></li>
-						<li><a href="tools.html?whois" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Whois Lookup</a></li>
-						<li><a href="tools.html?geoip" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>GeoIP Lookup</a></li>
-						<li><a href="tools.html?exlink" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Page Links Extract</a></li>
+						<li><a href="tools.html?dnsv" target="_blank" id="dns"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>DNS Lookup</a></li>
+						<li><a href="tools.html?iplookup" target="_blank" id="iplookup"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>IP Lookup</a></li>
+						<li><a href="tools.html?server" target="_blank" id="server"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Scan Server</a></li>
+						<li><a href="tools.html?portscan" target="_blank" id="portsc"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Port Scanner</a></li>
+						<li><a href="tools.html?ipweb" target="_blank" id="ipweb"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Website IP Finder</a></li>
+						<li><a href="tools.html?revip" target="_blank" id="revip"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Reverse IP</a></li>
+						<li><a href="tools.html?subdomain" target="_blank" id="subdomain"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Subdomain Scanner</a></li>
+						<li><a href="tools.html?whois" target="_blank" id="whois"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Whois Lookup</a></li>
+						<li><a href="tools.html?geoip" target="_blank" id="geoip"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>GeoIP Lookup</a></li>
+						<li><a href="tools.html?exlink" target="_blank" id="exlink"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Page Links Extract</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
@@ -171,27 +177,25 @@
 					<ul class="treeview-menu">
 						<li><a href="#" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Image Maker<i class="fa fa-angle-left pull-right"></i></a>
 							<ul class="treeview-menu">
-								<li><a href="tools.html?harta" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Harta Tahta</a>
+								<li><a href="tools.html?harta" target="_blank" id="harta"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Harta Tahta</a>
 								</li>
 							</ul>
 						</li>
-						<li><a href="tools.html?mangaku" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mangaku</a></li>
+						<li><a href="tools.html?mangaku" target="_blank" id="mangaku"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mangaku</a></li>
 						<li><a href="#" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Nulis<i class="fa fa-angle-left pull-right"></i></a>
 							<ul class="treeview-menu">
-								<li><a href="tools.html?nulis" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Bot Nulis</a>
+								<li><a href="tools.html?nulis" target="_blank" id="nulis"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Bot Nulis</a>
 								</li>
-								<li><a href="tools.html?mager" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mager Nulis</a>
+								<li><a href="tools.html?mager" target="_blank" id="mager"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mager Nulis</a>
 								</li>
 							</ul>
 						</li>
 						<li><a href="#" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Nhentai<i class="fa fa-angle-left pull-right"></i></a>
 							<ul class="treeview-menu">
-								<li><a href="tools.html?nhread" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Nhentai Reader</a>
-								</li>
-								<li><a href="#" target="" onclick="alert('tools ini sedang dalam perbaikan');"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Nhentai Reader + Download</a>
+								<li><a href="tools.html?nhread" target="_blank" id="nhread"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Nhentai Reader</a>
 								</li>
 							</ul>
-						<li><a href="tools.html?alay" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Text Alay Generator</a></li>
+						<li><a href="tools.html?alay" target="_blank" id="alay"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Text Alay Generator</a></li>
 					</ul>
 				</li>
 
@@ -201,18 +205,17 @@
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="tools.html?alexa" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Alexa Rank Checker</a></li>
+						<li><a href="tools.html?alexa" target="_blank" id="alexa"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Alexa Rank Checker</a></li>
 						<li>
-							<a href="tools.html?mozrank" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>MozRank Checker</a>
+							<a href="tools.html?mozrank" target="_blank" id="mozrank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>MozRank Checker</a>
 						</li>
 					</ul>
 				</li>
 			</ul>
 			<ul class="sidebar-menu">
-				<li><a href="https://forum.exploits.site/" target="_blank"><i class="fa fa-comments-o"></i> <span><font face="bebas neue" color="">Forum & CLI Tools</font></span></a></li>
                 <li><a href="#" onclick="location.replace('comment.html');"><i class="fa fa-comment-o"></i> <span><font face="bebas neue">Comment Section</font></span></a></li></ul>
                 <ul class="sidebar-menu">
-                <li class="header"><font face="bebas neue"></font></li>
+                <li class="header"><font face="bebas neue">Digunakan : <oren id="servernya">SERVER 1</oren><br><br>Tools Lag ? Ganti Ke <server onclick="sayu()" style="cursor: pointer;">SERVER 2</server></font></li>
             </ul>
 		</section>
 	</aside>
@@ -250,9 +253,9 @@
 				<style>a[class="btn Right Interactive Hand"]{display:none;}</style>
 				<div class="panel-body" style="background-color: #1f1f1f; text-align: center; font-family: Bungee">+ Update Terbaru +<br><br>
 					<font face="Helvetica">
+						[<b>20-Juni-2021</b>] Update Tools Server 2</u><br>
 						[<b>14-Juni-2021</b>] Add Tool <u>Perl.alfa RCE</u><br>
-						[<b>12-Juni-2021</b>] Add Tool <u>Mass SQLI Balitbang</u><br>
-						[<b>07-Juni-2021</b>] Add Tool <u>Mass Admin Finder</u><br><br>
+						[<b>12-Juni-2021</b>] Add Tool <u>Mass SQLI Balitbang</u><br><br>
 						[<a href="log.html"><font color="orange"><b>Check All Update</b></font></a>]
 					</font>
 				</div>
@@ -270,7 +273,7 @@
 		<center>Copyright &copy; 2021 by Unknown45. All Rights Reserved </b></center>
 	</footer>
 
-
+<script src="dist/js/server2.js"></script>
 <script src="dist/js/jquery-2.1.4.min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
 <script src="dist/js/plugins/velocity/velocity.min.js"></script>
