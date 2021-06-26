@@ -51,5 +51,8 @@ function sayu() {
     document.getElementById("massfinder").href="tools2.html?mfind";
     document.getElementById("massbalitbang").href="tools2.html?mblb";
     document.getElementById("perlalfa").href="tools2.html?plal";
+    document.getElementById("ojs").href="tools2.html?ojs";
+    document.getElementById("zoneh").href="tools2.html?zoneh";
+    document.getElementById("scanweb").href="tools2.html?scanweb";
     return false;
 };

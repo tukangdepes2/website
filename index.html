@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="dist/css/font-awesome.min.css">
 	<link rel="stylesheet" href="dist/css/s-next.css">
+	<link rel="stylesheet" href="dist/css/live2d.css">
 	<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
 </head>
@@ -117,6 +118,7 @@
 						<li><a href="tools.html?mblb" target="_blank" id="massbalitbang"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass SQLI Balitbang</a></li>
 						<li><a href="tools.html?msql" target="_blank" id="masssqli"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass SQLi Scanner</a></li>
 						<li><a href="tools.html?telerik" target="_blank" id="telerik"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Telerik Scanner</a></li>
+						<li><a href="tools.html?ojs" target="_blank" id="ojs"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>OJS Shell Finder</a></li>
 						<li><a href="tools.html?plal" target="_blank" id="perlalfa"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Perl.alfa RCE</a></li>
 						<li><a href="tools.html?sby" target="_blank" id="bypasser"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Shell Bypasser Anti 403</a></li>
 						<li><a href="tools.html?ssi" target="_blank" id="ssi"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>SSI Command Bypasser</a></li>
@@ -182,6 +184,7 @@
 							</ul>
 						</li>
 						<li><a href="tools.html?mangaku" target="_blank" id="mangaku"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mangaku</a></li>
+						<li><a href="tools.html?zoneh" target="_blank" id="zoneh"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Notify Zone-H</a></li>
 						<li><a href="#" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Nulis<i class="fa fa-angle-left pull-right"></i></a>
 							<ul class="treeview-menu">
 								<li><a href="tools.html?nulis" target="_blank" id="nulis"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Bot Nulis</a>
@@ -206,8 +209,9 @@
 					</a>
 					<ul class="treeview-menu">
 						<li><a href="tools.html?alexa" target="_blank" id="alexa"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Alexa Rank Checker</a></li>
-						<li>
-							<a href="tools.html?mozrank" target="_blank" id="mozrank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>MozRank Checker</a>
+						<li><a href="tools.html?scanweb" target="_blank" id="scanweb"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Scan Defaced Web</a>
+						</li>
+						<li><a href="tools.html?mozrank" target="_blank" id="mozrank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>MozRank Checker</a>
 						</li>
 					</ul>
 				</li>
@@ -218,6 +222,9 @@
                 <li class="header"><font face="bebas neue">Digunakan : <oren id="servernya">SERVER 1</oren><br><br>Tools Lag ? Ganti Ke <server onclick="sayu()" style="cursor: pointer;">SERVER 2</server></font></li>
             </ul>
 		</section>
+		<div class="waifu"><div class="waifu-tips"></div>
+  		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+  		</div>
 	</aside>
 	<div class="content-wrapper">
 		<section class="content">
@@ -253,17 +260,16 @@
 				<style>a[class="btn Right Interactive Hand"]{display:none;}</style>
 				<div class="panel-body" style="background-color: #1f1f1f; text-align: center; font-family: Bungee">+ Update Terbaru +<br><br>
 					<font face="Helvetica">
-						[<b>20-Juni-2021</b>] Update Tools Server 2</u><br>
-						[<b>14-Juni-2021</b>] Add Tool <u>Perl.alfa RCE</u><br>
-						[<b>12-Juni-2021</b>] Add Tool <u>Mass SQLI Balitbang</u><br><br>
-						[<a href="log.html"><font color="orange"><b>Check All Update</b></font></a>]
+						[<b>26-Juni-2021</b>] Add Tool <u>Mass Scan Defaced Web</u><br>
+						[<b>26-Juni-2021</b>] Add Tool <u>Mass Notify Zone-H</u><br>
+						[<b>26-Juni-2021</b>] Add Tool <u>OJS Shell Finder</u>
 					</font>
 				</div>
 			</div>
 			<div class="panel panel-default">
 				<style>a[class="btn Right Interactive Hand"]{display:none;}</style>
 				<div class="panel-body" style="background-color: #1f1f1f; text-align: center; font-family: Bungee">+ Live Chat +<br><br>
-					<iframe src="https://www6.cbox.ws/box/?boxid=863288&boxtag=DkaaoN" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+					<iframe src="https://www6.cbox.ws/box/?boxid=863288&boxtag=DkaaoN" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" class="komen"></iframe>
 				</div>
 			</div>
 		</section>
@@ -273,6 +279,9 @@
 		<center>Copyright &copy; 2021 by Unknown45. All Rights Reserved </b></center>
 	</footer>
 
+<script async src="path/to/waifu-tips.js"></script>
+<script src="path/to/live2d.js"></script>
+<script type="text/javascript">loadlive2d("live2d", "path/pio/model.json");</script>
 <script src="dist/js/server2.js"></script>
 <script src="dist/js/jquery-2.1.4.min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
