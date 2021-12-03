@@ -27,12 +27,12 @@ String.prototype.render = function (context) {
 var re = /x/;
 console.log(re);
 re.toString = function() {
-    showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+    showMessage('hayo kak ngapain buka console ? xixi (─‿‿─)', 5000);
     return '';
 };
 
 $(document).on('copy', function (){
-    showMessage('你都复制了些什么呀，转载要记得加上出处哦', 5000);
+    showMessage('habis copy apa kak ? jangan nyolong ya ( ˘︹˘ )', 5000);
 });
 
 $.ajax({
@@ -67,36 +67,39 @@ $.ajax({
         text = 'Hello! Pengunjung dari <span style="color:#0099cc;">' + referrer.hostname + '</span> !';
         var domain = referrer.hostname.split('.')[1];
         if (domain == 'baidu') {
-            text = 'Hello! 来自 百度搜索 的朋友<br>你是搜索 <span style="color:#0099cc;">' + referrer.search.split('&wd=')[1].split('&')[0] + '</span> 找到的我吗？';
+            //text = 'Hello! 来自 百度搜索 的朋友<br>你是搜索 <span style="color:#0099cc;">' + referrer.search.split('&wd=')[1].split('&')[0] + '</span> 找到的我吗？';
+            text = 'Selamat datang kak di website <font color=red>https://exploits.my.id/</font><br>Semoga betah ya ≧^◡^≦';
         }else if (domain == 'so') {
-            text = 'Hello! 来自 360搜索 的朋友<br>你是搜索 <span style="color:#0099cc;">' + referrer.search.split('&q=')[1].split('&')[0] + '</span> 找到的我吗？';
+            //text = 'Hello! 来自 360搜索 的朋友<br>你是搜索 <span style="color:#0099cc;">' + referrer.search.split('&q=')[1].split('&')[0] + '</span> 找到的我吗？';
+            text = 'Selamat datang kak di website <font color=red>https://exploits.my.id/</font><br>Semoga betah ya ≧^◡^≦';
         }else if (domain == 'google') {
-            text = 'Hello! 来自 谷歌搜索 的朋友<br>欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
+            //text = 'Hello! 来自 谷歌搜索 的朋友<br>欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
+            text = 'Selamat datang kak di website <font color=red>https://exploits.my.id/</font><br>Semoga betah ya ≧^◡^≦';
         }
     }else {
         if (window.location.href !== 'https://imjad.cn/') { //如果是主页
             var now = (new Date()).getHours();
             if (now > 23 || now <= 5) {
-                text = 'Selamat Datang kak >_< <br>Apakah kakak burung hantu malam? Aku tidak akan tidur terlalu larut, jadi aku bangun besok';
+                text = 'Selamat Datang kak (≖_≖ ) <br>Apakah kakak burung hantu malam? Aku tidak akan tidur terlalu larut, jadi aku bangun besok';
             } else if (now > 5 && now <= 7) {
-                text = 'Selamat pagi kak >_< <br> selamat datang di website <font color=red>https://exploits.site/</font>';
+                text = 'Selamat pagi kak ≧^◡^≦ <br> selamat datang di website <font color=red>https://exploits.my.id/</font>';
             } else if (now > 7 && now <= 11) {
-                text = 'Selamat pagi kak >_< <br> selamat datang di website <font color=red>https://exploits.site/</font>';
+                text = 'Selamat pagi kak ≧^◡^≦ <br> selamat datang di website <font color=red>https://exploits.my.id/</font>';
             } else if (now > 11 && now <= 14) {
-                text = 'Selamat siang kak >_< <br> selamat datang di website <font color=red>https://exploits.site/</font>';
+                text = 'Selamat siang kak ≧^◡^≦ <br> selamat datang di website <font color=red>https://exploits.my.id/</font>';
             } else if (now > 14 && now <= 17) {
-                text = 'Selamat sore kak >_< <br> selamat datang di website <font color=red>https://exploits.site/</font>';
+                text = 'Selamat sore kak ≧^◡^≦ <br> selamat datang di website <font color=red>https://exploits.my.id/</font>';
             } else if (now > 17 && now <= 19) {
-                text = 'Selamat sore kak >_< <br> selamat datang di website <font color=red>https://exploits.site/</font>';
+                text = 'Selamat sore kak ≧^◡^≦ <br> selamat datang di website <font color=red>https://exploits.my.id/</font>';
             } else if (now > 19 && now <= 21) {
-                text = 'Selamat malam kak >_< <br> selamat datang di website <font color=red>https://exploits.site/</font>';
+                text = 'Selamat malam kak ≧^◡^≦ <br> selamat datang di website <font color=red>https://exploits.my.id/</font>';
             } else if (now > 21 && now <= 23) {
-                text = 'Selamat malam kak >_< <br> selamat datang di website <font color=red>https://exploits.site/</font>';
+                text = 'Selamat malam kak ≧^◡^≦ <br> selamat datang di website <font color=red>https://exploits.my.id/</font>';
             } else {
                 text = 'Hai~ Datang dan bermainlah denganku!';
             }
         }else {
-            text = 'Selamat datang kak di website <font color=red>https://exploits.site/</font><br>Semoga betah ya >_<';
+            text = 'Selamat datang kak di website <font color=red>https://exploits.my.id/</font><br>Semoga betah ya ≧^◡^≦';
         }
     }
     showMessage(text, 6000);

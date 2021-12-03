@@ -61,7 +61,7 @@
             "text": ["点击图片可以放大呢"]
         },
         {
-            "selector": "input[name=s]",
+            "selector": "input[name=nme]",
             "text": ["找不到想看的内容？搜索看看吧"]
         },
         {
