@@ -37,6 +37,7 @@
   }
 }
   </script>
+  
 <style>
 	  @import url('https://fonts.googleapis.com/css?family=Bungee');
 	  @import url('https://fonts.googleapis.com/css?family=Squada+One');
@@ -48,22 +49,6 @@
 	  	color: orange;
 	  }
 </style>
-<script type="text/javascript">
-	$("#yes").click(function(){
-    var trans_id=$(this).attr("trans_id");
-    $.ajax({
-        url:'infomation/gc_details_2.php',
-        data:{
-            "id":trans_id
-        },
-        type:"GET",
-        success:function(data){
-        }
-    });
-    return false;
-});
-
-</script>
 <body class="hold-transition sidebar-mini" oncontextmenu="return false" onkeydown="return false" onmousedown="return false" bgcolor="#1f1f1f">
 	<noscript>
 		<table width="100%" height="100%"><td><center>Website Ini Menggunakan Javascript<br>Silahkan Aktifkan Javascript Anda</center></td></table>
@@ -80,6 +65,11 @@
 			</a>
 			<div class="navbar-custom-menu">
 				<ul class="nav navbar-nav">
+					<li class="dropdown messages-menu" id="waifuku" style="display: block">
+						<a href="javascript:void(0)" class="dropdown-toggle">
+							<font style="font-family: Bungee" onclick="waifu()" id="waifuku2"><oren>HIDE</oren> WAIFU</font>
+						</a>
+					</li>
 					<li class="dropdown messages-menu">
 						<a href="#" class="dropdown-toggle" onclick="alert('email : #');">
 							<i class="fa fa-envelope"></i>
@@ -278,7 +268,7 @@
 			</ul>
 		</section>
 		<p style="text-align: center;font-family: Bungee; color: #fff">Tools Lag ? Ganti ke<br><font color="orange" style="cursor: pointer;" onclick="window.location = 'server2.html'">Server 2</font></p>
-		<div class="waifu"><div class="waifu-tips"></div>
+		<div class="waifu" style="display: block" id="waifukunih"><div class="waifu-tips"></div>
 		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
   		</div>
 	</aside>
@@ -335,8 +325,35 @@
 		<center>Copyright &copy; 2021 by Unknown45. All Rights Reserved </b></center>
 	</footer>
 
+<script type="text/javascript">
+function waifu() {
+	var waifu = document.getElementById('waifukunih').style.display;
+	if (waifu == "block") {
+		document.getElementById('waifukunih').style.display = "none";
+		document.getElementById('waifuku2').innerHTML = "<oren>SHOW</oren> WAIFU";
+	} else {
+		document.getElementById('waifukunih').style.display = "block";
+		document.getElementById('waifuku2').innerHTML = "<oren>HIDE</oren> WAIFU";
+	}
+}
+</script>
+<script type="text/javascript">
+	//alert(window.innerWidth);
+  	if (window.innerWidth < 765) {
+  		document.getElementById('waifuku').style.display = "none";
+  	}
+</script>
 <script src="path/to/live2d.js"></script>
-<script type="text/javascript">loadlive2d("live2d", "path/pio/model.json");</script>
+<script type="text/javascript">
+var original = ['path/pio/model.json', 'path/pio2/model.json', 'path/tia/model.json'];
+var copy = [].concat(original);
+copy.sort(function(){
+  return 0.5 - Math.random();
+});
+
+loadlive2d("live2d", copy[0]);
+</script>
+<!-- <script type="text/javascript">loadlive2d("live2d", "path/pio/model.json");</script> -->
 <script src="dist/js/server2.js"></script>
 <script src="dist/js/jquery-2.1.4.min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
