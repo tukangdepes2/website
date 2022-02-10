@@ -3639,7 +3639,7 @@ function shuf(a) {
         //var md = shuf(this.json[this.TEXTURES]);
         //alert(this.json[this.TEXTURES]);
         //return null == md[0] || null == md[0] ? null : md[0]
-        alert(asus);
+        //alert(asus);
         return null == this.json[this.TEXTURES] || null == asus ? null : asus
     }, r.prototype.getModelFile = function () {
         return this.json[this.MODEL]
