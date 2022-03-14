@@ -1,27 +1,382 @@
+﻿<!-- Author : Unknown45 -->
+<!-- Hargai Author :) -->
+
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Site is down for maintenance</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style type="text/css">
-            body { text-align: center; padding: 10%; font: 20px Helvetica, sans-serif; color: #333; }
-            h1 { font-size: 50px; margin: 0; }
-            article { display: block; text-align: left; max-width: 650px; margin: 0 auto; }
-            a { color: #dc8100; text-decoration: none; }
-            a:hover { color: #333; text-decoration: none; }
-            @media only screen and (max-width : 480px) {
-                h1 { font-size: 40px; }
-            }
-        </style>
-    </head>
-    <body>
-        <article>
-            <h1>Site is temporarily unavailable.</h1>
-            <p>Situs sedang dalam masa perbaikan !</p>
-            <p>Kami mohon maaf atas ketidaknyamanannya
-</p>
-            <p id="signature">&mdash; <a href="//facebook.com/unknown.shtml">[Unknown45]</a></p>
-        </article>
-    </body>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Exploit Tools Web Based</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<meta name="description" content="let's break the security">
+	<meta property="og:description" content="let's break the security">
+	<meta property="og:image" content="https://i.imgur.com/5rdUUlU.jpg">
+	<meta name="copyright" content="Tools">
+	<meta name="author" content="Unknown45">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/css/font-awesome.min.css">
+	<link rel="stylesheet" href="dist/css/s-next.css">
+	<link rel="stylesheet" href="dist/css/live2d.css">
+	<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+</head>
+<script type='application/ld+json'>
+{
+  "@context": "https://schema.org/",
+  "@type": "Book",
+  "name": "Exploits",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "72801",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+  </script>
+  
+<style>
+	  @import url('https://fonts.googleapis.com/css?family=Bungee');
+	  @import url('https://fonts.googleapis.com/css?family=Squada+One');
+	  @import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+	  server {
+	  	color: yellow;
+	  }
+	  oren {
+	  	color: orange;
+	  }
+</style>
+<body class="hold-transition sidebar-mini" oncontextmenu="return false" onkeydown="return false" onmousedown="return false" bgcolor="#1f1f1f">
+	<noscript>
+		<table width="100%" height="100%"><td><center>Website Ini Menggunakan Javascript<br>Silahkan Aktifkan Javascript Anda</center></td></table>
+	</noscript>
+<div class="wrapper">
+	<header class="main-header">
+		<a href="index.html" class="logo">
+			<span class="logo-mini"><img src="https://i.imgur.com/4XEc7qw.jpg" width="30" height="30" style="border-radius: 50%;"></span>
+			<span class="logo-lg"><img src="https://i.imgur.com/6Er3227.gif" width="200" height="50"></span>
+		</a>
+		<nav class="navbar navbar-static-top" role="navigation">
+			<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+				<span class="sr-only">Toggle navigation</span>
+			</a>
+			<div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<li class="dropdown messages-menu" id="waifuku" style="display: block">
+						<a href="javascript:void(0)" class="dropdown-toggle">
+							<font style="font-family: Bungee" onclick="waifu()" id="waifuku2"><oren>HIDE</oren> WAIFU</font>
+						</a>
+					</li>
+					<li class="dropdown messages-menu">
+						<a href="#" class="dropdown-toggle" onclick="alert('email : #');">
+							<i class="fa fa-envelope"></i>
+						</a>
+					</li>
+					<li class="dropdown notifications-menu">
+						<a href="https://facebook.com/unknown.shtml" class="dropdown-toggle" target="_blank">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+					</li>
+					<li class="dropdown tasks-menu">
+						<a href="https://github.com/whoami-45" class="dropdown-toggle" target="_blank">
+							<i class="fa fa-github-square"></i>
+						</a>
+					</li>
+					<li class="dropdown user user-menu" style="display: block;">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="display: block;" onclick="alert('Unknown45 (Author)\nJust An Ordinary Person');">
+							<img src="https://i.imgur.com/4XEc7qw.jpg" class="user-image" alt="User Image">
+						</a>
+							</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<aside class="main-sidebar">
+		<section class="sidebar">
+			<ul class="sidebar-menu">
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-wrench"></i>
+						<span><font face="bebas Neue">Exploit Tools</font></span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="tools.html?admin" target="_blank" id="finder"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Admin Finder</a></li>
+						<li><a href="#"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Alfa Shell RCE<i class="fa fa-angle-left pull-right"></i></a>
+						<ul class="treeview-menu">
+								<li><a href="tools.html?perlalfa" target="_blank" id="perlalfa"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Perl.alfa RCE</a>
+								<li><a href="tools.html?pyalfa" target="_blank" id="pyalfa"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Py.alfa RCE</a></li>
+							</ul>
+						<li><a href="tools.html?cms" target="_blank" id="cms"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CMS Scanner</a></li>
+						<li><a href="#"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Tools<i class="fa fa-angle-left pull-right"></i></a>
+						<ul class="treeview-menu">
+								<li><a href="tools.html?asik" target="_blank" id="asik"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Add Admin ASIK</a>
+								</li>
+								<li><a href="tools.html?candycbt" target="_blank" id="admincandy"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Admin CandyCBT</a>
+								</li>
+								<li><a href="tools.html?kontributor" target="_blank" id="kontributor"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Add Kontributor</a>
+								</li>
+								<li>
+									<a href="tools.html?balitbang" target="_blank" id="balitbang"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Balitbang 3.5.3</a>
+								</li>
+								<li>
+									<a href="tools.html?csrf" target="_blank" id="csrf"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>CSRF Online</a>
+								</li>
+							</ul>
+						<li><a href="tools.html?email" target="_blank" id="mailer"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Email Bomber</a></li>
+						<li><a href="tools.html?gdork" id="gdorker"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Google Dorker</a></li>
+						<li><a href="tools.html?jso" target="_blank" id="jso"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>JSO Generator</a></li>
+						<li><a href="tools.html?jquery" target="_blank" id="jq"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>JQuery Path Finder</a></li>
+						<li><a href="tools.html?kcfind" target="_blank" id="kcfind"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>KCFinder Path Finder</a></li>
+            <li><a href="#"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Laravel Exploits<i class="fa fa-angle-left pull-right"></i></a>
+            <ul class="treeview-menu">
+               	<li><a href="#" target="_blank" id="appkey" onclick="alert('tool sedang dalam perbaikan :)')"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>AppKey RCE</a>
+              	<li><a href="tools.html?phpunit" target="_blank" id="phpunit"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>phpunit RCE</a>
+                </li>
+                <li><a href="tools.html?stdin" target="_blank" id="evalstdin"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Eval Stdin Scanner</a>
+                </li>
+                <li><a href="tools.html?masenv" target="_blank" id="massenv"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Env Scanner</a>
+                </li>
+              </ul>
+						<li><a href="tools.html?mfind" target="_blank" id="massfinder"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Admin Finder</a></li>
+						<li><a href="tools.html?sekolahku" target="_blank" id="sekolahku"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass CMS Sekolahku</a></li>
+						<li><a href="tools.html?mkcf" target="_blank" id="masskcfinder"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass KCFinder Auto Upshell</a></li>
+						<li><a href="tools.html?mblb" target="_blank" id="massbalitbang"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass SQLI Balitbang</a></li>
+						<li><a href="tools.html?msql" target="_blank" id="masssqli"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass SQLi Scanner</a></li>
+						<li><a href="tools.html?telerik" target="_blank" id="telerik"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Telerik Scanner</a></li>
+						<li><a href="tools.html?ojs" target="_blank" id="ojs"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>OJS Shell Finder</a></li>
+						<li><a href="tools.html?sby" target="_blank" id="bypasser"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Shell Bypasser Anti 403</a></li>
+						<li><a href="tools.html?slimsthumb" target="_blank" id="slimsthumb"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Slims PHPThumb Scanner</a></li>
+						<li><a href="tools.html?ssi" target="_blank" id="ssi"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>SSI Command Bypasser</a></li>
+						<li><a href="tools.html?telkey" target="_blank" id="telerikey"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Telerik Brute Keys</a></li>
+						<li><a href="tools.html?timthumb" target="_blank" id="timthumb"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>TimThumb Exploiter</a></li>
+						<li><a href="tools.html?updir" target="_blank" id="updir"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Upload Path Finder</a></li>
+						<li><a href="tools.html?webdav" target="_blank" id="webdav"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>WebDav Mass Deface</a></li>
+						<li><a href="#"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wordpress Exploits<i class="fa fa-angle-left pull-right"></i></a>
+						<ul class="treeview-menu">
+								<li><a href="tools.html?wpbf" target="_blank" id="wpbf"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Wordpress Bruteforce</a></li>
+								<li><a href="tools.html?wptheme" target="_blank" id="wptheme"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass WP Theme Scanner</a></li>
+								<li><a href="tools.html?wpplugins" target="_blank" id="wpplugins"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass WP Plugins Scanner</a></li>
+								<li><a href="tools.html?wpup" target="_blank" id="wpup"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass WP Default u/p</a></li>
+								<li><a href="tools.html?wpcustom" target="_blank" id="wpupcustom"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass WP Custom u/p</a></li>
+								<li><a href="tools.html?wpinscan" target="_blank" id="wpinscan"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass WP Install</a></li>
+								<li><a href="tools.html?wpsetcon" target="_blank" id="wpsetcon"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass WP Setup Config</a></li>
+								<li><a href="tools.html?wpxmlrpc" target="_blank" id="wpxmlrpc"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass WP u/p XMLRPC</a></li>
+							</ul>
+						<li><a href="tools.html?wpscan" target="_blank" id="wpscan"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>WPScan Online</a></li>
+						<li><a href="tools.html?xampp" target="_blank" id="xampp"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>XAMPP Local Write Access</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-laptop"></i> <span><font face="bebas Neue">Programmer Tools</font></span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="tools.html?http" target="_blank" id="http"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Add http / https</a></li>
+						<li><a href="tools.html?encode" target="_blank" id="encode"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Encode & Decode</a></li>
+						<li><a href="tools.html?htmle" target="_blank" id="html"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>HTML Encrypter</a></li>
+						<li><a href="tools.html?livehtml" target="_blank" id="livehtml"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Live HTML</a></li>
+						<li><a href="tools.html?obfuscator" target="_blank" id="obfuscator"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>PHP Obfuscator</a></li>
+						<li><a href="tools.html?proxy" target="_blank" id="proxy"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Proxy Website</a></li>
+						<li><a href="tools.html?duplicate" target="_blank" id="duplicate"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Remove Duplicate Line</a></li>
+						<li><a href="tools.html?obf" target="_blank" id="obf"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Simple Obfuscator</a></li>
+						<li><a href="tools.html?urlclean" target="_blank" id="urlclean"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>URL Cleaner</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-search"></i> <span><font face="bebas neue">Lookup Tools</font></span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="tools.html?dnsv" target="_blank" id="dns"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>DNS Lookup</a></li>
+						<li><a href="#"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Grab Domain<i class="fa fa-angle-left pull-right"></i></a>
+						<ul class="treeview-menu">
+								<li><a href="tools.html?grabdate" target="_blank" id="grabdomain"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Grab Domain by Date</a></li>
+								<li><a href="tools.html?grabkey" target="_blank" id="grabkey"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Grab Domain by Keyword</a></li>
+								<li><a href="tools.html?grabhaxor" target="_blank" id="grabhaxor"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Grab Domain from HaxorID</a></li>
+								<li><a href="tools.html?grabxsec" target="_blank" id="grabxsec"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Grab Domain form ZoneX</a></li>
+							</ul>
+						<li><a href="tools.html?hash" target="_blank" id="hash"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Hash Identifier</a></li>
+						<li><a href="tools.html?iplookup" target="_blank" id="iplookup"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>IP Lookup</a></li>
+						<li><a href="tools.html?domainip" target="_blank" id="domainip"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Domain to IP</a></li>
+						<li><a href="tools.html?server" target="_blank" id="server"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Scan Server</a></li>
+						<li><a href="tools.html?massurl" target="_blank" id="massurl"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass URL After Redirect</a></li>
+						<li><a href="tools.html?portscan" target="_blank" id="portsc"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Port Scanner</a></li>
+						<li><a href="tools.html?ipweb" target="_blank" id="ipweb"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Website IP Finder</a></li>
+						<li><a href="tools.html?revip" target="_blank" id="revip"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Reverse IP</a></li>
+						<li><a href="tools.html?subdomain" target="_blank" id="subdomain"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Subdomain Scanner</a></li>
+						<li><a href="tools.html?whois" target="_blank" id="whois"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Whois Lookup</a></li>
+						<li><a href="tools.html?geoip" target="_blank" id="geoip"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>GeoIP Lookup</a></li>
+						<li><a href="tools.html?exlink" target="_blank" id="exlink"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Page Links Extract</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-puzzle-piece"></i> <span><font face="bebas Neue">Random Tools</font></span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="#" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Image Maker<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li><a href="tools.html?harta" target="_blank" id="harta"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Harta Tahta</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="tools.html?mangaku" target="_blank" id="mangaku"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mangaku</a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Nulis<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li><a href="tools.html?nulis" target="_blank" id="nulis"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Bot Nulis</a>
+								</li>
+								<li><a href="tools.html?mager" target="_blank" id="mager"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mager Nulis</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="tools.html?nhread" target="_blank" id="nhread"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Nhentai Reader</a>
+						<li><a href="tools.html?alay" target="_blank" id="alay"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Text Alay Generator</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-bullhorn"></i> <span><font face="bebas neue">Mirror Tools</font></span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="tools.html?mirror" target="_blank" id="mirror"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Auto Mirror</a></li>
+						<li><a href="tools.html?zoned" target="_blank" id="zoned"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Notify Zone-D</a></li>
+						<li><a href="tools.html?zonex" target="_blank" id="scanweb"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Notify Zone-XSec</a>
+						</li>
+						<li><a href="tools.html?zoneh" target="_blank" id="zoneh"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Notify Zone-H</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-check"></i> <span><font face="bebas neue">Checker</font></span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="tools.html?alexa" target="_blank" id="alexa"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Alexa Rank Checker</a></li>
+						<li><a href="tools.html?dapa" target="_blank" id="dapa"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>DA PA Checker</a></li>
+						<li><a href="tools.html?scanweb" target="_blank" id="scanweb"><i class="fa fa-circle-o" style="color: #1f1f1f;"></i>Mass Scan Defaced Web</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<p style="text-align: center;font-family: Bungee; color: #fff">Tools Lag ? Ganti ke<br><font color="orange" style="cursor: pointer;" onclick="window.location = 'server2.html'">Server 2</font></p>
+		<div class="waifu" style="display: block" id="waifukunih">
+			<div class="waifu-tips"></div>
+			<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+  		</div>
+	</aside>
+	<div class="content-wrapper">
+		<section class="content">
+<div class="row">
+				<div class="col-md-6">
+					<div class="box box-solid" style="background: #2e2d2d;">
+						<div class="box-header with-border" style="background: #2e2d2d; border: #ffffff;">
+							<font color="white" class="box-title" style="font-family: Bungee">Exploit Tools Web Based</font>
+						</div>
+						<div class="box-body text-center" style="background: #2e2d2d; font-family: Squada One; text-align: left;" id="bahasaenggres"><font style="font-family: Helvetica"> 
+							Berisi alat yang di gunakan untuk deface dan mencari kelemahan suatu website, namun tidak hanya alat untuk deface saja selebihnya cek menu di samping :)<br><i><font color="orange">kalau ada request atau tool yang error silahkan <a href="#" onclick="location.replace('comment.html');"><font color="orange"><u>comment</u></font></a></i></font>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box box-solid" style="background: #2e2d2d;">
+						<div class="box-header with-border" style="background: #2e2d2d; border: #ffffff;">
+							<font color="white" class="box-title" style="font-family: Bungee">Bantu Author</font>
+						</div>
+						<div class="box-body text-center" style="background: #2e2d2d; font-family: Squada One; text-align: left;"><font style="font-family: Helvetica"> 
+							Donasi via <a href="#"><font color="orange">Saweria</font></a><br>
+							Donasi via <a href="#"><font color="orange">Trakteer</font></a><br>
+							Donasi via <font onclick="alert('silahkan donasi ke U27282974')" style="cursor: pointer;" color="orange">Perfectmoney</font>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="box box-solid">
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<style>a[class="btn Right Interactive Hand"]{display:none;}</style>
+				<div class="panel-body" style="background-color: #1f1f1f; text-align: center; font-family: Bungee">+ Update Terbaru +<br><br>
+					<font face="Helvetica">
+						[<b>24-Januari-2021</b>] Add Tool <u>Mass KCFinder Auto Upload Shell</u><br>
+						[<b>24-Januari-2021</b>] Add Tool <u>Mass Wordpress Plugins Scanner</u><br>
+						[<b>24-Januari-2021</b>] Add Tool <u>Mass Wordpress Theme Scanner</u><br>
+					</font>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<style>a[class="btn Right Interactive Hand"]{display:none;}</style>
+				<div class="panel-body" style="background-color: #1f1f1f; text-align: center">
+					<font face="Helvetica">
+						Official Unknown45 (exploits.my.id)<br>Bot WA : <a href="https://wa.me/+6283865207221" target="_blank">+6283865207221</a><br>Gunakan <b>!euy</b> untuk melihat menu tools.
+					</font>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<style>a[class="btn Right Interactive Hand"]{display:none;}</style>
+				<div class="panel-body" style="background-color: #1f1f1f; text-align: center; font-family: Bungee">+ Live Chat +<br><br>
+					<iframe src="https://www6.cbox.ws/box/?boxid=863288&boxtag=DkaaoN" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" class="komen"></iframe>
+				</div>
+			</div>
+		</section>
+	</div>
+	<iframe src="https://api.countapi.xyz/hit/exploits.my.id/visits" width="0" height="0" style="position: absolute; width:0; height:0; border:0;"></iframe>
+	<footer class="main-footer">		
+		<center>Copyright &copy; 2022 by Unknown45. All Rights Reserved </b></center>
+	</footer>
+
+<script type="text/javascript">
+function waifu() {
+	var waifu = document.getElementById('waifukunih').style.display;
+	if (waifu == "block") {
+		document.getElementById('waifukunih').style.display = "none";
+		document.getElementById('waifuku2').innerHTML = "<oren>SHOW</oren> WAIFU";
+	} else {
+		document.getElementById('waifukunih').style.display = "block";
+		document.getElementById('waifuku2').innerHTML = "<oren>HIDE</oren> WAIFU";
+	}
+}
+</script>
+<script type="text/javascript">
+	//alert(window.innerWidth);
+  	if (window.innerWidth < 765) {
+  		document.getElementById('waifuku').style.display = "none";
+  	}
+</script>
+<script src="path/to/live2d.js"></script>
+<script type="text/javascript">
+	/*
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+var model = ['path/pio/model.json', 'path/pio2/model.json', 'path/tia/model.json'];
+var res = shuffle(model)[0]
+
+loadlive2d("live2d", res);
+*/
+</script>
+<script async src="path/to/waifu-tips.js"></script>
+<script type="text/javascript">loadlive2d("live2d", "path/pio/model.json");</script>
+<script src="dist/js/server2.js"></script>
+<script src="dist/js/jquery-2.1.4.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/plugins/velocity/velocity.min.js"></script>
+<script src="dist/js/s-next.js"></script>
+</body>
 </html>
