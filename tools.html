@@ -381,6 +381,10 @@
     document.title = "[+] cve-2023-23752 Scanner [+]";
     document.write(atob(sc));
     delay("http://v1.exploits.my.id/?tools=cve-2023-23752");
+}  else if (window.location.search.indexOf('grabnew') > -1) {
+    document.title = "[+] cve-2023-23752 Scanner [+]";
+    document.write(atob(sc));
+    delay("http://v1.exploits.my.id/?tools=grabnew");
 }  else if (window.location.search.indexOf('mirror') > -1) {
     document.title = "[+] Auto Mirror [+]";
     document.write(atob(sc));
