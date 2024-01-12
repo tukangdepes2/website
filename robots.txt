@@ -36,4 +36,4 @@ Disallow: /cgi-bin/
 Disallow: /index.html
 Disallow: /main.html
 Disallow: /404.html
-Sitemap: https://exploits.my.id/sitemap.xml
+Sitemap: https://exploits.website/sitemap.xml
